@@ -1,9 +1,23 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Claudine & Eustache (Habibu) — Ubutumire",
-  description:
-    "Twishimiye kubatumira mubukwe bwa Claudine Mutesi na Habiyaremye Eustache (Habibu) — 22 Kanama 2026.",
+  title: "Claudine & Eustache — 22 Kanama 2026",
+  description: "Twishimiye kubatumira mubukwe bwa Claudine Mutesi na Habiyaremye Eustache (Habibu) — 22 Kanama 2026.",
+  openGraph: {
+    title: "Claudine & Eustache — Ubutumire 💍",
+    description: "Twishimiye kubatumira mubukwe bwa Claudine na Habibu — 22 Kanama 2026.",
+    url: "https://weeding-of-c-e.vercel.app",
+    siteName: "Claudine & Eustache Wedding",
+    images: [
+      {
+        url: "https://weeding-of-c-e.vercel.app/ce.png",
+        width: 800,
+        height: 800,
+        alt: "Claudine na Eustache",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export const viewport = {
