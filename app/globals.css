@@ -139,18 +139,22 @@ button {
   border-radius: 4px 4px 0 0;
   box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.15);
   z-index: 4;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 14%;
-  text-align: center;
 }
 
-.envelope-card-peek .peek-text {
+.envelope-center-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 8;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   color: var(--gold-deep);
-  font-size: clamp(16px, 3.6vw, 20px);
+  font-size: clamp(14px, 3.2vw, 18px);
+  text-align: center;
+  pointer-events: none;
+  padding: 0 12px;
 }
 
 .seal {

@@ -66,11 +66,18 @@ function Envelope({ onOpen }) {
         onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onOpen()}
       >
         <div className="envelope-body">
-          <div className="envelope-card-peek">
-            <div className="peek-text">click here&nbsp;to see our invitation</div>
-          </div>
+          <div className="envelope-card-peek" />
           <div className="envelope-shadow-inner" />
         </div>
+
+        <motion.div
+          className="envelope-center-text"
+          initial={{ opacity: 0, scale: 0.5, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+        >
+          click here to see our wedding invitation
+        </motion.div>
 
         <motion.div
           className="envelope-flap"
@@ -83,9 +90,7 @@ function Envelope({ onOpen }) {
         <div className="seal">F&nbsp;E</div>
       </div>
 
-      <div className="tap-hint">
-        Kanda ku baruwa <span className="pulse" />
-      </div>
+
     </div>
   );
 }
